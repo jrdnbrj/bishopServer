@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+graphene # https://github.com/graphql-python/graphene
+python-decouple # https://github.com/henriquebastos/python-decouple
