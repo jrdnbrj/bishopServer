@@ -17,7 +17,7 @@ class Query(ObjectType):
                 'phone_number': "0984790449",
                 'password': "123456",
                 'name': "Jordan Borja",
-                'nickname': "Jordan",
+                'nickname': "Jordanito",
                 'email': "elruix@bishop.com",
                 'birth': datetime.date(1998, 9, 19),
                 'dni': "1717270175",
@@ -30,7 +30,7 @@ class Query(ObjectType):
                 'name': "Todd Henst",
                 'nickname': "Todd",
                 'email': "todd@bishop.com",
-                'birth': "2008-02-25",
+                'birth': datetime.date(1998, 9, 19),
             },
         ]
 
