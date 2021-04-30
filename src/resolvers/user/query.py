@@ -1,8 +1,10 @@
 from graphene import ObjectType
 from graphene import String, Int, List, Field
+
 from ..type import UserType
 
 import datetime
+
 
 class Query(ObjectType):
     get_users = List(UserType)

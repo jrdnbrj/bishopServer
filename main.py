@@ -9,6 +9,7 @@ from src.schema import schema
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+
 app = FastAPI()
 
 app.add_route("/gql", GraphQLApp(schema=schema))

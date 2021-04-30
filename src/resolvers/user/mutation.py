@@ -1,5 +1,6 @@
 from graphene import ObjectType, Mutation
 from graphene import String, Boolean, Field, Int, Date
+
 from ..type import UserType
 
 
