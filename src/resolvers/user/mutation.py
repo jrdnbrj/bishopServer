@@ -3,6 +3,8 @@ from graphene import String, Boolean, Field, Int, Date
 
 from ..type import UserType
 
+from ...services.user_service import create_user
+
 
 class CreateUser(Mutation):
     class Arguments:
@@ -26,7 +28,7 @@ class CreateUser(Mutation):
     role = String()
 
     def mutate(root, info, phone_number, password, nickname, name=None, email=None, birth=None, dni=None, role=None):
-        return CreateUser(
+        return create_user(
             phone_number=phone_number, 
             password=password, 
             name=name, 
