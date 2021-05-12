@@ -1,7 +1,5 @@
 from graphene import ObjectType, Mutation
-from graphene import String, Boolean, Field, Int, Date
-
-from ..type import UserType
+from graphene import String, Date
 
 from ...services.user_service import create_user
 

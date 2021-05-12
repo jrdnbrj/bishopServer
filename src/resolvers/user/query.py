@@ -14,8 +14,5 @@ class Query(ObjectType):
         return get_all_users()
 
     def resolve_get_user(parent, info, id):
-        try:
-            return get_one_user(id)
-        except:
-            return None
+        return get_one_user(id)
         

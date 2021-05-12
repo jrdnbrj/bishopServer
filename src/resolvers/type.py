@@ -15,9 +15,21 @@ class UserType(ObjectType):
 
 class ProductType(ObjectType):
     id = String(required=True)
-    name = String(required=True)
-    short_name = String()
+    name = String()
     price = Decimal()
-    description = String()
-    picture = String()
-    
+    year = String()
+    transmission = String() # AT or MT
+    mileage = Int() # Kilometraje
+    color = String()
+    plate = String() # Placa
+    type = String()
+    brand = String()
+    model = String()
+    registration = Date()
+    cylinder = String() # Cilindraje
+    country = String()
+    chassis = String()
+    lien = Boolean() # Gravamen
+    lien_comment = String()
+    budget = String() # Presupuesto - rango
+    observation = String()
