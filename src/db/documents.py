@@ -48,3 +48,19 @@ class Product(Document):
     lien_comment = StringField(max_length=200)
     budget = StringField(max_length=10) # Presupuesto - rango
     observation = StringField(max_length=200)
+
+    meta = {
+        'indexes': [{
+            'fields': ['plate',],
+            'unique': True,
+            'partialFilterExpression': {
+                'plate': { '$type': 'string' }
+            }
+        },{
+            'fields': ['chassis',],
+            'unique': True,
+            'partialFilterExpression': {
+                'chassis': { '$type': 'string' }
+            }
+        }]
+    }
